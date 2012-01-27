@@ -1,0 +1,78 @@
+.sprite-social-wordpress,
+.sprite-social-wordpress-share,
+.sprite-social-twitter,
+.sprite-social-twitter-share,
+.sprite-social-twitter-retweet,
+.sprite-social-twitter-follow,
+.sprite-social-tumblr,
+.sprite-social-tumblr-share,
+.sprite-social-technorati,
+.sprite-social-technorati-share,
+.sprite-social-stumbleupon,
+.sprite-social-stumbleupon-stumble,
+.sprite-social-stumbleupon-share,
+.sprite-social-rss,
+.sprite-social-rss-sub,
+.sprite-social-reddit,
+.sprite-social-reddit-share,
+.sprite-social-myspace,
+.sprite-social-myspace-share,
+.sprite-social-livejournal,
+.sprite-social-livejournal-share,
+.sprite-social-linkedin,
+.sprite-social-linkedin-share,
+.sprite-social-googlebuzz,
+.sprite-social-googlebuzz-share,
+.sprite-social-googlebuzz-buzz,
+.sprite-social-flickr,
+.sprite-social-flickr-share,
+.sprite-social-faceboook-fan,
+.sprite-social-facebook,
+.sprite-social-facebook-share,
+.sprite-social-digg,
+.sprite-social-digg-share,
+.sprite-social-deviantart,
+.sprite-social-deviantart-share,
+.sprite-social-delicious,
+.sprite-social-delicious-share,
+.sprite-social-blogger,
+.sprite-social-blogger-share{background-image:url('..\img\social.png');background-repeat:no-repeat;}
+.sprite-social-wordpress{background-position:0px 0px;width:167px; height:72px;}
+.sprite-social-wordpress-share{background-position:0px -72px;width:167px; height:72px;}
+.sprite-social-twitter{background-position:-167px 0px;width:167px; height:72px;}
+.sprite-social-twitter-share{background-position:-167px -72px;width:167px; height:72px;}
+.sprite-social-twitter-retweet{background-position:0px -144px;width:167px; height:72px;}
+.sprite-social-twitter-follow{background-position:-167px -144px;width:167px; height:72px;}
+.sprite-social-tumblr{background-position:0px -216px;width:167px; height:72px;}
+.sprite-social-tumblr-share{background-position:-167px -216px;width:167px; height:72px;}
+.sprite-social-technorati{background-position:-334px 0px;width:167px; height:72px;}
+.sprite-social-technorati-share{background-position:-334px -72px;width:167px; height:72px;}
+.sprite-social-stumbleupon{background-position:-334px -144px;width:167px; height:72px;}
+.sprite-social-stumbleupon-stumble{background-position:-334px -216px;width:167px; height:72px;}
+.sprite-social-stumbleupon-share{background-position:0px -288px;width:167px; height:72px;}
+.sprite-social-rss{background-position:-167px -288px;width:167px; height:72px;}
+.sprite-social-rss-sub{background-position:-334px -288px;width:167px; height:72px;}
+.sprite-social-reddit{background-position:0px -360px;width:167px; height:72px;}
+.sprite-social-reddit-share{background-position:-167px -360px;width:167px; height:72px;}
+.sprite-social-myspace{background-position:-334px -360px;width:167px; height:72px;}
+.sprite-social-myspace-share{background-position:-501px 0px;width:167px; height:72px;}
+.sprite-social-livejournal{background-position:-501px -72px;width:167px; height:72px;}
+.sprite-social-livejournal-share{background-position:-501px -144px;width:167px; height:72px;}
+.sprite-social-linkedin{background-position:-501px -216px;width:167px; height:72px;}
+.sprite-social-linkedin-share{background-position:-501px -288px;width:167px; height:72px;}
+.sprite-social-googlebuzz{background-position:-501px -360px;width:167px; height:72px;}
+.sprite-social-googlebuzz-share{background-position:0px -432px;width:167px; height:72px;}
+.sprite-social-googlebuzz-buzz{background-position:-167px -432px;width:167px; height:72px;}
+.sprite-social-flickr{background-position:-334px -432px;width:167px; height:72px;}
+.sprite-social-flickr-share{background-position:-501px -432px;width:167px; height:72px;}
+.sprite-social-faceboook-fan{background-position:0px -504px;width:167px; height:72px;}
+.sprite-social-facebook{background-position:-167px -504px;width:167px; height:72px;}
+.sprite-social-facebook-share{background-position:-334px -504px;width:167px; height:72px;}
+.sprite-social-digg{background-position:-501px -504px;width:167px; height:72px;}
+.sprite-social-digg-share{background-position:0px -576px;width:167px; height:72px;}
+.sprite-social-deviantart{background-position:-167px -576px;width:167px; height:72px;}
+.sprite-social-deviantart-share{background-position:-334px -576px;width:167px; height:72px;}
+.sprite-social-delicious{background-position:-501px -576px;width:167px; height:72px;}
+.sprite-social-delicious-share{background-position:-668px 0px;width:167px; height:72px;}
+.sprite-social-blogger{background-position:-668px -72px;width:167px; height:72px;}
+.sprite-social-blogger-share{background-position:-668px -144px;width:167px; height:72px;}

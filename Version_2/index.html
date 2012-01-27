@@ -1,0 +1,130 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <link rel="dns-prefetch" href="//ajax.googleapis.com/">
+  <link rel="dns-prefetch" href="//graph.facebook.com/">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Captured Moments By Jessie</title>
+  
+  <meta name="description" content="">
+  <!-- Facebook OpenGraph metadata -->
+  <meta property="og:title" content="Captured Moments By Jessie">
+  <meta property="og:description" content="">
+  <!--------------------------------->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <link rel="author" href="humans.txt">
+
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+  <header>
+	<h1>Captured Moments <span>By Jessie</span></h1>
+	<nav>
+		<a href="#about">About</a>
+		<a href="#family">Families</a>
+		<a href="#children">Children</a>
+		<a href="#couples">Couples</a>
+		<a href="#contact">Contact</a>
+	</nav>
+  </header>
+  
+	<div id="about" class="panel">
+		<img src="img/profile.jpg" alt="Profile" />
+		<p>I have always wanted to be a photographer for as long as I can remember. I have a husband, Corey and a son Ethan. After Ethan was born, December of 2009, I quit my job and decided to stay at home with him. My husband and I thought, what better time to start photography? Like I said, this is something I've always wanted to do, and It would keep me busy since I didn't have a job anymore (as if being a first time Mom wasn't busy enough). So, I am just now starting out. Pictures of my family mean the world to me, and I'm sure my customers feel the same about their pictures, So I try to keep my prices afordable to everyone. I specialize in family/group portraits, individual, Maternity, Newborn, Baby, Children, & Seniors. I am extremely open to any ideas that are presented to me for any photo session. My goal is to let each individuals personality shine through in their photos and Capture the Moment!</p>
+	</div>
+	<div id="family" class="panel">
+		<img id='viewer'> <!-- TODO: Style viewer/IMG sizes -->
+		<br />
+		<div id='thumbs'></div>
+	</div>
+	<div id="children" class="panel"> <!-- TODO: Seperate albums -->
+		<h1>Children</h1>
+	</div>
+	<div id="couples" class="panel">
+		<h1>Couples</h1>
+	</div>
+	<div id="contact" class="panel">
+		<address>
+		Jessie Wilson (Owner, Photographer)<br />
+		2274 S. Stringtown Rd.<br />
+		Covington, IN 47932<br />
+		765-793-7971<br />
+		</address>
+		<!-- TODO: Facebook Button -->
+	</div>
+  
+  <footer>
+	<p>&copy; Captured Moments by Jessie - Jessie Wilson</p>
+	<a href="http://jlewsader.com">Design by Justin Lewsader</a>
+  </footer>
+
+  <!-- scripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<!-- Horizontal Sliding Script -->
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+		   $("body").addClass("has-js");
+		   $("nav a").bind("click",function(event){
+			   event.preventDefault();
+			   var target = $(this).attr("href");
+			   $("html, body").stop().animate({
+				   scrollLeft: $(target).offset().left,
+				   scrollTop: $(target).offset().top
+			   }, 1200);
+		   });
+		});
+	</script>
+	<!-- Facebook Photos Script -->
+	<script type="text/javascript">
+	(function (gallery_id) {
+	var viewer = $('#viewer'),
+	thumbs = $('#thumbs');
+	access_token = ('AAAFDfooNRwUBALJbUPZBysqzgRsPbAo6Yexgj0tHvtHPezx6ztcGJZAkNeQ0xVk2pFHn4uF6bhZAfWs7xiCyYBiC3oDzM4ZD'); // -- Access Token from Facebook
+
+	// images
+	$.getJSON('https://graph.facebook.com/' + gallery_id + '/photos?access_token=' + access_token +'', function(json, status, xhr) {
+	var imgs = json.data;
+
+	viewer.attr('src', imgs[0].images[0].source)
+
+	for (var i = 0, l = imgs.length - 1; i < l; i++) {
+	$('<img src="' + imgs[i].images[3].source + '" data-fullsize="' + imgs[i].images[0].source + '">').appendTo(thumbs);
+	}
+
+	$('img', thumbs).bind('click', function(e) {
+	e.preventDefault();
+	viewer.attr('src', $(this).attr('data-fullsize'));
+	});
+	});
+	})('758282908393'); //  -- put the gallery ID here
+	</script>
+   <!-- end scripts -->
+
+
+  <!-- Google Analytics -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  <!-- Prompt IE 6 users to install Chrome Frame -->
+  <!--[if lt IE 7 ]>
+    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>
